@@ -1,0 +1,30 @@
+.text{
+color: black;
+}
+body{
+    background-color: antiquewhite;
+}
+#button {
+    background-color: greenyellow;
+}
+#mu{
+    background-color: rgb(252, 252, 255);
+
+}
+.yoknahee {
+    background-color: aquamarine;
+    padding: 20px;
+    border-radius: 20%;
+
+}
+.yhee {
+    color: aqua;
+    background-color: rgb(63, 29, 214);
+    border-radius: 20px 20px;
+    padding: 20px;
+    margin: 1px;
+}
+#ku{
+    background-color: rgb(179, 21, 47);
+}
+
