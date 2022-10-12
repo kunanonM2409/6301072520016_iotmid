@@ -6,8 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body >
     <button onclick="window.open('Page_1.html')">BACK</button>
+    <h1>Flow Tranducer</h1> 
+
+   <h1 id = "name_1flow"></h1>
+   <h1 id = "type_1flow"></h1>
+   <h1 id = "unit_1flow"></h1>
+   <h1 id = "range_1flow"></h1>
+   <h1 id = "plantsite_1flow"></h1>
+   <h1 id = "value_1flow"></h1>
+
+</ul><br>
+
+   <h1 id = "name_3flow"></h1>
+   <h1 id = "type_3flow"></h1>
+   <h1 id = "unit_3flow"></h1>
+   <h1 id = "range_3flow"></h1>
+   <h1 id = "plantsite_3flow"></h1>
+   <h1 id = "value_3flow"></h1>
+
+</ul><br>
+
+    <h1 id = "name_5flow"></h1>
+    <h1 id = "type_5flow"></h1>
+    <h1 id = "unit_5flow"></h1>
+    <h1 id = "range_5flow"></h1>
+    <h1 id = "plantsite_5flow"></h1>
+    <h1 id = "value_5flow"></h1>
+
+
+
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        fetch('http://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=flow-transducer')
+        .then(response => response.json())
+        .then(data => {
+         console.log(data);
+         const name_2flow = data[0].name;
+         const type_2flow = data[0].type;
+         const unit_2flow = data[0].unit;
+         const range_2flow = data[0].range;
+         const plantsite_2flow = data[0]["plant-site"];
+         const value_2flow = data[0].value;
+
+         document.getElementById('name_1flow').innerHTML = `name : ${name_2flow}`;
+         document.getElementById('type_1flow').innerHTML =`type : ${type_2flow}`;
+         document.getElementById('unit_1flow').innerHTML =`unit :${unit_2flow}`;
+         document.getElementById('range_1flow').innerHTML =`range :${range_2flow}`;
+         document.getElementById('plantsite_1flow').innerHTML =`plantsite :${plantsite_2flow}`;
+         document.getElementById('value_1flow').innerHTML =`value :${value_2flow}`;
+
+
+         const name_4flow = data[1].name;
+         const type_4flow = data[1].type;
+         const unit_4flow = data[1].unit;
+         const range_4flow = data[1].range;
+         const plantsite_4flow = data[1]["plant-site"];
+         const value_4flow = data[1].value;
+
+         document.getElementById('name_3flow').innerHTML = `name : ${name_4flow}`;
+         document.getElementById('type_3flow').innerHTML =`type : ${type_4flow}`;
+         document.getElementById('unit_3flow').innerHTML =`unit :${unit_4flow}`;
+         document.getElementById('range_3flow').innerHTML =`range :${range_4flow}`;
+         document.getElementById('plantsite_3flow').innerHTML =`plantsite :${plantsite_4flow}`;
+         document.getElementById('value_3flow').innerHTML =`value :${value_4flow}`;
+
+         const name_6flow = data[2].name;
+         const type_6flow = data[2].type;
+         const unit_6flow = data[2].unit;
+         const range_6flow = data[2].range;
+         const plantsite_6flow = data[2]["plant-site"];
+         const value_6flow = data[2].value;
+
+         
+         document.getElementById('name_5flow').innerHTML = `name : ${name_6flow}`;
+         document.getElementById('type_5flow').innerHTML =`type : ${type_6flow}`;
+         document.getElementById('unit_5flow').innerHTML =`unit :${unit_6flow}`;
+         document.getElementById('range_5flow').innerHTML =`range :${range_6flow}`;
+         document.getElementById('plantsite_5flow').innerHTML =`plantsite :${plantsite_6flow}`;
+         document.getElementById('value_5flow').innerHTML =`value :${value_6flow}`;
+         
+         
+        })
+    })
+</script>
 
 </body>
 </html>

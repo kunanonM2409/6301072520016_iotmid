@@ -8,5 +8,87 @@
 </head>
 <body>
     <button onclick="window.open('Page_1.html')">BACK</button>
+    <h1>pressure Tranducer</h1> 
+
+    <h1 id = "name_1pressure"></h1>
+    <h1 id = "type_1pressure"></h1>
+    <h1 id = "unit_1pressure"></h1>
+    <h1 id = "range_1pressure"></h1>
+    <h1 id = "plantsite_1pressure"></h1>
+    <h1 id = "value_1pressure"></h1>
+
+</ul><br>
+
+    <h1 id = "name_3pressure"></h1>
+    <h1 id = "type_3pressure"></h1>
+    <h1 id = "unit_3pressure"></h1>
+    <h1 id = "range_3pressure"></h1>
+    <h1 id = "plantsite_3pressure"></h1>
+    <h1 id = "value_3pressure"></h1>
+
+</ul><br>
+
+    <h1 id = "name_5pressure"></h1>
+    <h1 id = "type_5pressure"></h1>
+    <h1 id = "unit_5pressure"></h1>
+    <h1 id = "range_5pressure"></h1>
+    <h1 id = "plantsite_5pressure"></h1>
+    <h1 id = "value_5pressure"></h1>
+    
+    
+    
+    <script>
+            document.addEventListener('DOMContentLoaded',function(){
+            fetch('https://midterm-exam-010723313-2022.herokuapp.com/device?sensor_type=pressure-transducer')
+            .then(response => response.json())
+            .then(data => {
+             console.log(data);
+             const name_2pressure = data[0].name;
+             const type_2pressure = data[0].type;
+             const unit_2pressure = data[0].unit;
+             const range_2pressure = data[0].range;
+             const plantsite_2pressure = data[0]["plant-site"];
+             const value_2pressure = data[0].value;
+
+             document.getElementById('name_1pressure').innerHTML = `name : ${name_2pressure}`;
+             document.getElementById('type_1pressure').innerHTML = `type : ${type_2pressure}`;
+             document.getElementById('unit_1pressure').innerHTML = `unit : ${unit_2pressure}`;
+             document.getElementById('range_1pressure').innerHTML = `range : ${range_2pressure}`;
+             document.getElementById('plantsite_1pressure').innerHTML = `plantsite : ${plantsite_2pressure}`;
+             document.getElementById('value_1pressure').innerHTML = `value : ${value_2pressure}`;
+
+             const name_4pressure = data[0].name;
+             const type_4pressure = data[0].type;
+             const unit_4pressure = data[0].unit;
+             const range_4pressure = data[0].range;
+             const plantsite_4pressure = data[0]["plant-site"];
+             const value_4pressure = data[0].value;
+
+             document.getElementById('name_3pressure').innerHTML = `name : ${name_4pressure}`;
+             document.getElementById('type_3pressure').innerHTML = `type : ${type_4pressure}`;
+             document.getElementById('unit_3pressure').innerHTML = `unit : ${unit_4pressure}`;
+             document.getElementById('range_3pressure').innerHTML = `range : ${range_4pressure}`;
+             document.getElementById('plantsite_3pressure').innerHTML = `plantsite : ${plantsite_4pressure}`;
+             document.getElementById('value_3pressure').innerHTML = `value : ${value_4pressure}`;
+
+             const name_6pressure = data[0].name;
+             const type_6pressure = data[0].type;
+             const unit_6pressure = data[0].unit;
+             const range_6pressure = data[0].range;
+             const plantsite_6pressure = data[0]["plant-site"];
+             const value_6pressure = data[0].value;
+
+             document.getElementById('name_5pressure').innerHTML = `name : ${name_6pressure}`;
+             document.getElementById('type_5pressure').innerHTML = `type : ${type_6pressure}`;
+             document.getElementById('unit_5pressure').innerHTML = `unit : ${unit_6pressure}`;
+             document.getElementById('range_5pressure').innerHTML = `range : ${range_6pressure}`;
+             document.getElementById('plantsite_5pressure').innerHTML = `plantsite : ${plantsite_6pressure}`;
+             document.getElementById('value_5pressure').innerHTML = `value : ${value_6pressure}`;
+
+             
+            })
+    })
+</script>
+   
 </body>
 </html>
