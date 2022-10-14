@@ -5,35 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="page3.css">
 </head>
 <body>
-    <button onclick="window.open('Page_1.html')">BACK</button>
-    <h1>pressure Tranducer</h1> 
+    <body align=" center">
+    
+    <div align="center">
+    <h1>Pressure Tranducer</h1> 
+    </div>
+    <div align = "center">
 
-    <h1 id = "name_1pressure"></h1>
-    <h1 id = "type_1pressure"></h1>
-    <h1 id = "unit_1pressure"></h1>
-    <h1 id = "range_1pressure"></h1>
-    <h1 id = "plantsite_1pressure"></h1>
-    <h1 id = "value_1pressure"></h1>
+    <div id="name_1pressure"></div>
+    
+    <h2 id = "type_1pressure"></h2>
+    <h2 id = "unit_1pressure"></h2>
+    <h2 id = "range_1pressure"></h2>
+    <h2 id = "plantsite_1pressure"></h2>
+    <h2 id = "value_1pressure"></h2>
+<br>    
 
-</ul><br>
 
-    <h1 id = "name_3pressure"></h1>
-    <h1 id = "type_3pressure"></h1>
-    <h1 id = "unit_3pressure"></h1>
-    <h1 id = "range_3pressure"></h1>
-    <h1 id = "plantsite_3pressure"></h1>
-    <h1 id = "value_3pressure"></h1>
+    <div id="name_3pressure"></div>
+    <h3 id = "type_3pressure"></h3>
+    <h3 id = "unit_3pressure"></h3>
+    <h3 id = "range_3pressure"></h3>
+    <h3 id = "plantsite_3pressure"></h3>
+    <h3 id = "value_3pressure"></h3>
 
-</ul><br>
-
-    <h1 id = "name_5pressure"></h1>
-    <h1 id = "type_5pressure"></h1>
-    <h1 id = "unit_5pressure"></h1>
-    <h1 id = "range_5pressure"></h1>
-    <h1 id = "plantsite_5pressure"></h1>
-    <h1 id = "value_5pressure"></h1>
+<br>
+    <div id="name_5pressure"></div>
+    
+    <h4 id = "type_5pressure"></h4>
+    <h4 id = "unit_5pressure"></h4>
+    <h4 id = "range_5pressure"></h4>
+    <h4 id = "plantsite_5pressure"></h4>
+    <h4 id = "value_5pressure"></h4><div>
     
     
     
@@ -50,45 +56,46 @@
              const plantsite_2pressure = data[0]["plant-site"];
              const value_2pressure = data[0].value;
 
-             document.getElementById('name_1pressure').innerHTML = `name : ${name_2pressure}`;
-             document.getElementById('type_1pressure').innerHTML = `type : ${type_2pressure}`;
-             document.getElementById('unit_1pressure').innerHTML = `unit : ${unit_2pressure}`;
-             document.getElementById('range_1pressure').innerHTML = `range : ${range_2pressure}`;
-             document.getElementById('plantsite_1pressure').innerHTML = `plantsite : ${plantsite_2pressure}`;
-             document.getElementById('value_1pressure').innerHTML = `value : ${value_2pressure}`;
+             document.getElementById('name_1pressure').innerHTML = `name&nbsp;&nbsp : ${name_2pressure}`;
+             document.getElementById('type_1pressure').innerHTML = `type&nbsp;&nbsp : ${type_2pressure}`;
+             document.getElementById('unit_1pressure').innerHTML = `unit&nbsp;&nbsp : ${unit_2pressure}`;
+             document.getElementById('range_1pressure').innerHTML = `range&nbsp;&nbsp : ${range_2pressure}`;
+             document.getElementById('plantsite_1pressure').innerHTML = `plantsite&nbsp;&nbsp : ${plantsite_2pressure}`;
+             document.getElementById('value_1pressure').innerHTML = `value&nbsp;&nbsp : ${value_2pressure}`;
 
-             const name_4pressure = data[0].name;
-             const type_4pressure = data[0].type;
-             const unit_4pressure = data[0].unit;
-             const range_4pressure = data[0].range;
-             const plantsite_4pressure = data[0]["plant-site"];
-             const value_4pressure = data[0].value;
+             const name_4pressure = data[1].name;
+             const type_4pressure = data[1].type;
+             const unit_4pressure = data[1].unit;
+             const range_4pressure = data[1].range;
+             const plantsite_4pressure = data[1]["plant-site"];
+             const value_4pressure = data[1].value;
 
-             document.getElementById('name_3pressure').innerHTML = `name : ${name_4pressure}`;
-             document.getElementById('type_3pressure').innerHTML = `type : ${type_4pressure}`;
-             document.getElementById('unit_3pressure').innerHTML = `unit : ${unit_4pressure}`;
-             document.getElementById('range_3pressure').innerHTML = `range : ${range_4pressure}`;
-             document.getElementById('plantsite_3pressure').innerHTML = `plantsite : ${plantsite_4pressure}`;
-             document.getElementById('value_3pressure').innerHTML = `value : ${value_4pressure}`;
+             document.getElementById('name_3pressure').innerHTML = `name&nbsp;&nbsp : ${name_4pressure}`;
+             document.getElementById('type_3pressure').innerHTML = `type&nbsp;&nbsp : ${type_4pressure}`;
+             document.getElementById('unit_3pressure').innerHTML = `unit&nbsp;&nbsp : ${unit_4pressure}`;
+             document.getElementById('range_3pressure').innerHTML = `range&nbsp;&nbsp : ${range_4pressure}`;
+             document.getElementById('plantsite_3pressure').innerHTML = `plantsite&nbsp;&nbsp : ${plantsite_4pressure}`;
+             document.getElementById('value_3pressure').innerHTML = `value&nbsp;&nbsp : ${value_4pressure}`;
 
-             const name_6pressure = data[0].name;
-             const type_6pressure = data[0].type;
-             const unit_6pressure = data[0].unit;
-             const range_6pressure = data[0].range;
-             const plantsite_6pressure = data[0]["plant-site"];
-             const value_6pressure = data[0].value;
+             const name_6pressure = data[2].name;
+             const type_6pressure = data[2].type;
+             const unit_6pressure = data[2].unit;
+             const range_6pressure = data[2].range;
+             const plantsite_6pressure = data[2]["plant-site"];
+             const value_6pressure = data[2].value;
 
-             document.getElementById('name_5pressure').innerHTML = `name : ${name_6pressure}`;
-             document.getElementById('type_5pressure').innerHTML = `type : ${type_6pressure}`;
-             document.getElementById('unit_5pressure').innerHTML = `unit : ${unit_6pressure}`;
-             document.getElementById('range_5pressure').innerHTML = `range : ${range_6pressure}`;
-             document.getElementById('plantsite_5pressure').innerHTML = `plantsite : ${plantsite_6pressure}`;
-             document.getElementById('value_5pressure').innerHTML = `value : ${value_6pressure}`;
+             document.getElementById('name_5pressure').innerHTML = `name&nbsp;&nbsp : ${name_6pressure}`;
+             document.getElementById('type_5pressure').innerHTML = `type&nbsp;&nbsp : ${type_6pressure}`;
+             document.getElementById('unit_5pressure').innerHTML = `unit&nbsp;&nbsp : ${unit_6pressure}`;
+             document.getElementById('range_5pressure').innerHTML = `range&nbsp;&nbsp : ${range_6pressure}`;
+             document.getElementById('plantsite_5pressure').innerHTML = `plantsite&nbsp;&nbsp : ${plantsite_6pressure}`;
+             document.getElementById('value_5pressure').innerHTML = `value&nbsp;&nbsp : ${value_6pressure}`;
 
              
             })
     })
 </script>
+    <button class = "btn2" onclick="window.open('Page_1.html')">BACK</button>
    
 </body>
 </html>

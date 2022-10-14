@@ -5,35 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="page5.css">
 </head>
-<body>
-    <button onclick="window.open('Page_1.html')">BACK</button>
-    <h1>temperature Tranducer</h1> 
+<body align=" center">
+
+    <div align="center">
+    <h1>Temperature Tranducer</h1> 
+</div>
+<div align = "center">
     
-    <h1 id = "name_1temp"></h1>
-    <h1 id = "type_1temp"></h1>
-    <h1 id = "unit_1temp"></h1>
-    <h1 id = "range_1temp"></h1>
-    <h1 id = "plantsite_1temp"></h1>
-    <h1 id = "value_1temp"></h1>
+    
+    <div id="name_1temp"></div>
 
-</ul><br>
+    <h2 id = "type_1temp"></h2>
+    <h2 id = "unit_1temp"></h2>
+    <h2 id = "range_1temp"></h2>
+    <h2 id = "plantsite_1temp"></h2>
+    <h2 id = "value_1temp"></h2>
 
-    <h1 id = "name_3temp"></h1>
-    <h1 id = "type_3temp"></h1>
-    <h1 id = "unit_3temp"></h1>
-    <h1 id = "range_3temp"></h1>
-    <h1 id = "plantsite_3temp"></h1>
-    <h1 id = "value_3temp"></h1>
+<br>
 
-</ul><br>
+    <div id="name_3temp"></div>
 
-    <h1 id = "name_5temp"></h1>
-    <h1 id = "type_5temp"></h1>
-    <h1 id = "unit_5temp"></h1>
-    <h1 id = "range_5temp"></h1>
-    <h1 id = "plantsite_5temp"></h1>
-    <h1 id = "value_5temp"></h1>
+   
+    <h3 id = "type_3temp"></h3>
+    <h3 id = "unit_3temp"></h3>
+    <h3 id = "range_3temp"></h3>
+    <h3 id = "plantsite_3temp"></h3>
+    <h3 id = "value_3temp"></h3>
+
+<br>
+    <div id="name_5temp"></div>
+
+    
+    <h4 id = "type_5temp"></h4>
+    <h4 id = "unit_5temp"></h4>
+    <h4 id = "range_5temp"></h4>
+    <h4 id = "plantsite_5temp"></h1>
+    <h4 id = "value_5temp"></h1></div>
 
     <script>
         document.addEventListener('DOMContentLoaded',function(){
@@ -48,46 +57,47 @@
              const plantsite_2temp = data[0]["plant-site"];
              const value_2temp = data[0].value;
 
-             document.getElementById('name_1temp').innerHTML = `name : ${name_2temp}`;
-             document.getElementById('type_1temp').innerHTML = `type : ${type_2temp}`;
-             document.getElementById('unit_1temp').innerHTML = `unit : ${unit_2temp}`;
-             document.getElementById('range_1temp').innerHTML = `range : ${range_2temp}`;
-             document.getElementById('plantsite_1temp').innerHTML = `plantsite : ${plantsite_2temp}`;
-             document.getElementById('value_1temp').innerHTML = `value : ${value_2temp}`;
+             document.getElementById('name_1temp').innerHTML = `name &nbsp;&nbsp : ${name_2temp}`;
+             document.getElementById('type_1temp').innerHTML = `type &nbsp;&nbsp : ${type_2temp}`;
+             document.getElementById('unit_1temp').innerHTML = `unit &nbsp;&nbsp : ${unit_2temp}`;
+             document.getElementById('range_1temp').innerHTML = `range &nbsp;&nbsp : ${range_2temp}`;
+             document.getElementById('plantsite_1temp').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_2temp}`;
+             document.getElementById('value_1temp').innerHTML = `value &nbsp;&nbsp: ${value_2temp}`;
 
 
-             const name_4temp = data[0].name;
-             const type_4temp = data[0].type;
-             const unit_4temp = data[0].unit;
-             const range_4temp = data[0].range;
-             const plantsite_4temp = data[0]["plant-site"];
-             const value_4temp = data[0].value;
+             const name_4temp = data[1].name;
+             const type_4temp = data[1].type;
+             const unit_4temp = data[1].unit;
+             const range_4temp = data[1].range;
+             const plantsite_4temp = data[1]["plant-site"];
+             const value_4temp = data[1].value;
 
-             document.getElementById('name_3temp').innerHTML = `name : ${name_4temp}`;
-             document.getElementById('type_3temp').innerHTML = `type : ${type_4temp}`;
-             document.getElementById('unit_3temp').innerHTML = `unit : ${unit_4temp}`;
-             document.getElementById('range_3temp').innerHTML = `range : ${range_4temp}`;
-             document.getElementById('plantsite_3temp').innerHTML = `plantsite : ${plantsite_4temp}`;
-             document.getElementById('value_3temp').innerHTML = `value : ${value_4temp}`;
+             document.getElementById('name_3temp').innerHTML = `name &nbsp;&nbsp : ${name_4temp}`;
+             document.getElementById('type_3temp').innerHTML = `type &nbsp;&nbsp : ${type_4temp}`;
+             document.getElementById('unit_3temp').innerHTML = `unit &nbsp;&nbsp : ${unit_4temp}`;
+             document.getElementById('range_3temp').innerHTML = `range &nbsp;&nbsp : ${range_4temp}`;
+             document.getElementById('plantsite_3temp').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_4temp}`;
+             document.getElementById('value_3temp').innerHTML = `value &nbsp;&nbsp : ${value_4temp}`;
 
-             const name_6temp = data[0].name;
-             const type_6temp = data[0].type;
-             const unit_6temp = data[0].unit;
-             const range_6temp = data[0].range;
-             const plantsite_6temp = data[0]["plant-site"];
-             const value_6temp = data[0].value;
+             const name_6temp = data[2].name;
+             const type_6temp = data[2].type;
+             const unit_6temp = data[2].unit;
+             const range_6temp = data[2].range;
+             const plantsite_6temp = data[2]["plant-site"];
+             const value_6temp = data[2].value;
 
-             document.getElementById('name_5temp').innerHTML = `name : ${name_6temp}`;
-             document.getElementById('type_5temp').innerHTML = `type : ${type_6temp}`;
-             document.getElementById('unit_5temp').innerHTML = `unit : ${unit_6temp}`;
-             document.getElementById('range_5temp').innerHTML = `range : ${range_6temp}`;
-             document.getElementById('plantsite_5temp').innerHTML = `plantsite : ${plantsite_6temp}`;
-             document.getElementById('value_5temp').innerHTML = `value : ${value_6temp}`;
+             document.getElementById('name_5temp').innerHTML = `name &nbsp;&nbsp : ${name_6temp}`;
+             document.getElementById('type_5temp').innerHTML = `type &nbsp;&nbsp : ${type_6temp}`;
+             document.getElementById('unit_5temp').innerHTML = `unit &nbsp;&nbsp : ${unit_6temp}`;
+             document.getElementById('range_5temp').innerHTML = `range &nbsp;&nbsp : ${range_6temp}`;
+             document.getElementById('plantsite_5temp').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_6temp}`;
+             document.getElementById('value_5temp').innerHTML = `value &nbsp;&nbsp : ${value_6temp}`;
 
            
             })
     })
 </script>
+<button class = "btn1" onclick="window.open('Page_1.html')">BACK</button>
 
 
 </body>

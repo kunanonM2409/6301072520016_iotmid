@@ -5,35 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="page4.css">
 </head>
 <body>
-    <button onclick="window.open('Page_1.html')">BACK</button>
-    <h1>level Tranducer</h1> 
+    <body align=" center"></body>
+    
+    <div align="center">
+    <h1>Level Tranducer</h1> 
+    </div>
+    <div align = "center">
+    
+    <div id="name_1level"></div>
 
-    <h1 id = "name_1level"></h1>
-    <h1 id = "type_1level"></h1>
-    <h1 id = "unit_1level"></h1>
-    <h1 id = "range_1level"></h1>
-    <h1 id = "plantsite_1level"></h1>
-    <h1 id = "value_1level"></h1>
+   
+    <h2 id = "type_1level"></h2>
+    <h2 id = "unit_1level"></h2>
+    <h2 id = "range_1level"></h2>
+    <h2 id = "plantsite_1level"></h2>
+    <h2 id = "value_1level"></h2>
 
-</ul><br>
+<br>
 
-    <h1 id = "name_3level"></h1>
-    <h1 id = "type_3level"></h1>
-    <h1 id = "unit_3level"></h1>
-    <h1 id = "range_3level"></h1>
-    <h1 id = "plantsite_3level"></h1>
-    <h1 id = "value_3level"></h1>
+    <div id="name_3level"></div>
+    
+    <h3 id = "type_3level"></h3>
+    <h3 id = "unit_3level"></h3>
+    <h3 id = "range_3level"></h3>
+    <h3 id = "plantsite_3level"></h3>
+    <h3 id = "value_3level"></h3>
 
-</ul><br>
+<br>
 
-    <h1 id = "name_5level"></h1>
-    <h1 id = "type_5level"></h1>
-    <h1 id = "unit_5level"></h1>
-    <h1 id = "range_5level"></h1>
-    <h1 id = "plantsite_5level"></h1>
-    <h1 id = "value_5level"></h1>
+    <div id="name_5level"></div>
+    
+    <h4 id = "type_5level"></h4>
+    <h4 id = "unit_5level"></h4>
+    <h4 id = "range_5level"></h4>
+    <h4 id = "plantsite_5level"></h4>
+    <h4 id = "value_5level"></h4>
 
     <script>
         document.addEventListener('DOMContentLoaded',function(){
@@ -48,46 +57,47 @@
              const plantsite_2level = data[0]["plant-site"];
              const value_2level = data[0].value;
 
-             document.getElementById('name_1level').innerHTML = `name : ${name_2level}`;
-             document.getElementById('type_1level').innerHTML = `type : ${type_2level}`;
-             document.getElementById('unit_1level').innerHTML = `unit : ${unit_2level}`;
-             document.getElementById('range_1level').innerHTML = `range : ${range_2level}`;
-             document.getElementById('plantsite_1level').innerHTML = `plantsite : ${plantsite_2level}`;
-             document.getElementById('value_1level').innerHTML = `value : ${value_2level}`;
+             document.getElementById('name_1level').innerHTML = `name &nbsp;&nbsp : ${name_2level}`;
+             document.getElementById('type_1level').innerHTML = `type &nbsp;&nbsp : ${type_2level}`;
+             document.getElementById('unit_1level').innerHTML = `unit &nbsp;&nbsp : ${unit_2level}`;
+             document.getElementById('range_1level').innerHTML = `range &nbsp;&nbsp : ${range_2level}`;
+             document.getElementById('plantsite_1level').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_2level}`;
+             document.getElementById('value_1level').innerHTML = `value &nbsp;&nbsp : ${value_2level}`;
 
-             const name_4level = data[0].name;
-             const type_4level = data[0].type;
-             const unit_4level = data[0].unit;
-             const range_4level = data[0].range;
-             const plantsite_4level = data[0]["plant-site"];
-             const value_4level = data[0].value;
+             const name_4level = data[1].name;
+             const type_4level = data[1].type;
+             const unit_4level = data[1].unit;
+             const range_4level = data[1].range;
+             const plantsite_4level = data[1]["plant-site"];
+             const value_4level = data[1].value;
 
-             document.getElementById('name_3level').innerHTML = `name : ${name_4level}`;
-             document.getElementById('type_3level').innerHTML = `type : ${type_4level}`;
-             document.getElementById('unit_3level').innerHTML = `unit : ${unit_4level}`;
-             document.getElementById('range_3level').innerHTML = `range : ${range_4level}`;
-             document.getElementById('plantsite_3level').innerHTML = `plantsite : ${plantsite_4level}`;
-             document.getElementById('value_3level').innerHTML = `value : ${value_4level}`;
+             document.getElementById('name_3level').innerHTML = `name &nbsp;&nbsp : ${name_4level}`;
+             document.getElementById('type_3level').innerHTML = `type &nbsp;&nbsp : ${type_4level}`;
+             document.getElementById('unit_3level').innerHTML = `unit &nbsp;&nbsp : ${unit_4level}`;
+             document.getElementById('range_3level').innerHTML = `range &nbsp;&nbsp : ${range_4level}`;
+             document.getElementById('plantsite_3level').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_4level}`;
+             document.getElementById('value_3level').innerHTML = `value &nbsp;&nbsp : ${value_4level}`;
 
-             const name_6level = data[0].name;
-             const type_6level = data[0].type;
-             const unit_6level = data[0].unit;
-             const range_6level = data[0].range;
-             const plantsite_6level = data[0]["plant-site"];
-             const value_6level = data[0].value;
+             const name_6level = data[2].name;
+             const type_6level = data[2].type;
+             const unit_6level = data[2].unit;
+             const range_6level = data[2].range;
+             const plantsite_6level = data[2]["plant-site"];
+             const value_6level = data[2].value;
 
              
-             document.getElementById('name_5level').innerHTML = `name : ${name_6level}`;
-             document.getElementById('type_5level').innerHTML = `type : ${type_6level}`;
-             document.getElementById('unit_5level').innerHTML = `unit : ${unit_6level}`;
-             document.getElementById('range_5level').innerHTML = `range : ${range_6level}`;
-             document.getElementById('plantsite_5level').innerHTML = `plantsite : ${plantsite_6level}`;
-             document.getElementById('value_5level').innerHTML = `value : ${value_6level}`;
+             document.getElementById('name_5level').innerHTML = `name &nbsp;&nbsp : ${name_6level}`;
+             document.getElementById('type_5level').innerHTML = `type &nbsp;&nbsp : ${type_6level}`;
+             document.getElementById('unit_5level').innerHTML = `unit &nbsp;&nbsp : ${unit_6level}`;
+             document.getElementById('range_5level').innerHTML = `range &nbsp;&nbsp : ${range_6level}`;
+             document.getElementById('plantsite_5level').innerHTML = `plantsite &nbsp;&nbsp : ${plantsite_6level}`;
+             document.getElementById('value_5level').innerHTML = `value &nbsp;&nbsp : ${value_6level}`;
 
              
 
             })
     })
 </script>
+<button class = "btn1" onclick="window.open('Page_1.html')">BACK</button>
 </body>
 </html>
